@@ -48,3 +48,19 @@ var inviteEmployee2 = invite.bind(employee2);
 inviteEmployee1("Hello", "How are you?"); // Hello John Rodson, How are you?
 inviteEmployee2("Hello", "How are you?"); // Hello Jimmy Baily, How are you?
 
+
+//nested object  Call use
+var employeeNested={
+  name:{
+    firstName:"luthfi",
+    lastName:"khan"
+  },
+  nationality:{
+    country:"pakistan"
+  }
+}
+
+function invite(a,b){
+console.log(a," ",this.name.firstName," ",this.name.lastName," ",b," ",this.nationality.country)
+}
+invite.call(employeeNested,"My name is","from")
