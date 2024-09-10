@@ -64,3 +64,4 @@ function invite(a,b){
 console.log(a," ",this.name.firstName," ",this.name.lastName," ",b," ",this.nationality.country)
 }
 invite.call(employeeNested,"My name is","from")
+//output: My name is   luthfi   khan   from   pakistan
